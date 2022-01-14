@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <style>
+      h1 {
+          text-align: center;
+          color: blue;
+          font-family: verdana;
+          font-size: 200%;
+          border: none;
+          }
+
+      p {
+          display: inline;
+          text-align: center;
+          }
+
+      div {
+        display: block;
+        text-align: center;
+      }
+
+      form {
+        display: inline-block;
+        margins: auto;
+        text-align: center;
+      }
+    </style>
+  </head
+
+  <body>
+    <!-- in flask you have to create a static folder for your script file-->
+    <script src="/static/scripts.js" charset="utf-8"></script>
+
+    <h1>My Pythagorean Theorem Calculator</h1>
+
+    <!-- to get flask to capture form data add POST method--->
+    <div>
+    <form method="POST" action="">
+      <fieldset>
+        <legend>*</legend>
+
+        <p>
+          <!-- iinput name needs to be added and liniks to flask variable-->
+          <label>A<sup>2</sup> : </label>
+          <input 
+                type = "number"
+                name = "input_a"
+                id = "my_var_a"
+                value = />
+        </p>
+
+        <p>
+          <!-- iinput name needs to be added and liniks to flask variable-->
+          <label>B<sup>2</sup> : </label>
+          <input 
+                type = "number"
+                name = "input_b"
+                id = "my_var_b"
+                value = />
+        </p>
+
+        <!--<button type="button" onclick="CreateContent()">Calculate</button>
+        <input type="submit" value="Commit">-->
+
+      </fieldset>
+      <br>
+      <br>
+      <!--Output-->
+      <fieldset>
+        <legend>C<sup>2</sup></legend>
+          <p id="ContentCalc">Please enter info for A<sup>2</sup> and B<sup>2</sup></p>
+      </fieldset>
+      <br>
+      <br>
+      <div>
+        <button type="button" onclick="CreateContent()">Calculate</button>
+        <input type="submit" value="Commit">
+      </div>
+
+
+    </form>
+    </div>
+
+    <!--input type="text" name="input"-->
+    
+  </body>
+
+</html>
